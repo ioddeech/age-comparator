@@ -14,7 +14,7 @@ public class Main {
         if ((vasyaAge > 120 || vasyaAge < 0) ||
                 (katyaAge > 120 || katyaAge < 0) ||
                 (mishaAge > 120 || mishaAge < 0)) {
-            System.out.println("Некорректное значение. Проверьте правильность введенных данных");
+            System.out.println("Некорректное значение. Повторите попытку.");
         } else {
             //maxAge
             if (vasyaAge >= katyaAge && vasyaAge >= mishaAge) {
