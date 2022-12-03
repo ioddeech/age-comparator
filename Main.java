@@ -1,11 +1,17 @@
 import javax.sound.midi.Soundbank;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
-        int vasyaAge = 29;
-        int katyaAge = 13;
-        int mishaAge = 29;
+        WorkClass workClass = new WorkClass();
+
+        System.out.println("Введите возраст Васи:");
+        int vasyaAge = new Scanner(System.in).nextInt();
+        System.out.println("Введите возраст Кати:");
+        int katyaAge = new Scanner(System.in).nextInt();
+        System.out.println("Введите возраст Миши:");
+        int mishaAge = new Scanner(System.in).nextInt();
 
         int min = -1;
         int middle = -1;
@@ -47,9 +53,11 @@ public class Main {
             }
 
             //printing
-            System.out.println("Minimal age: " + min);
-            System.out.println("Middle age: " + middle);
-            System.out.println("Maximal age: " + max);
+            System.out.println("Наименьший возраст: " + min);
+            System.out.println("Средний возраст: " + middle);
+            System.out.println("Наибольший возраст: " + max);
+
+            System.out.println("Среднее значение среди всех: " + workClass.getSrAge(min, max, middle));
         }
     }
 }
