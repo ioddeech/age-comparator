@@ -53,9 +53,9 @@ public class Main {
             }
 
             //printing
-            System.out.println("Наименьший возраст: " + min);
-            System.out.println("Средний возраст: " + middle);
-            System.out.println("Наибольший возраст: " + max);
+            System.out.println("Наименьший возраст: " + min + workClass.getAgeEnd(min));
+            System.out.println("Средний возраст: " + middle + workClass.getAgeEnd(middle));
+            System.out.println("Наибольший возраст: " + max + workClass.getAgeEnd(max));
 
             System.out.println("Среднее значение среди всех: " + workClass.getSrAge(min, max, middle));
         }
