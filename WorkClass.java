@@ -60,7 +60,7 @@ public class WorkClass {
         System.out.println("Наименьший возраст: " + min + getAgeEnd(min));
         System.out.println("Средний возраст: " + middle + getAgeEnd(middle));
         System.out.println("Наибольший возраст: " + max + getAgeEnd(max));
-        System.out.println("Среднее значение среди всех: " + getSrAge(min, max, middle));
+        System.out.println("Среднее значение среди всех возрастов: " + getSrAge(min, max, middle));
     }
 }
 
