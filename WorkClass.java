@@ -1,6 +1,4 @@
 public class WorkClass {
-    public double srAge = 0;
-
     public int min;
     public int max;
     public int middle;
@@ -21,8 +19,6 @@ public class WorkClass {
         }
             return " года";
     }
-
-
 
     public int maxAgeCalcs(int vasyaAge, int katyaAge, int mishaAge){
         if (vasyaAge >= katyaAge && vasyaAge >= mishaAge) {
@@ -58,6 +54,13 @@ public class WorkClass {
             min = mishaAge;
         }
         return min;
+    }
+
+    public void print(int max, int min, int middle){
+        System.out.println("Наименьший возраст: " + min + getAgeEnd(min));
+        System.out.println("Средний возраст: " + middle + getAgeEnd(middle));
+        System.out.println("Наибольший возраст: " + max + getAgeEnd(max));
+        System.out.println("Среднее значение среди всех: " + getSrAge(min, max, middle));
     }
 }
 
